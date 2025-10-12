@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;700&display=swap");
+@import "tailwindcss";
+
+/* ✅ 3️⃣ Global font + direction rules */
+:root {
+  --font-en: "Poppins", sans-serif;
+  --font-ar: "Cairo", sans-serif;
+}
+
+/* Default to English (LTR) */
+html {
+  font-family: var(--font-en);
+  direction: ltr;
+  text-align: left;
+}
+
+/* Arabic mode (RTL) */
+html[lang="ar"] {
+  font-family: var(--font-ar);
+  direction: rtl;
+  text-align: right;
+}
+
+/* ✅ 4️⃣ Smooth transition when switching languages */
+body {
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* ✅ 5️⃣ Optional: helper classes if you want to force fonts manually */
+.font-en {
+  font-family: var(--font-en);
+}
+
+.font-ar {
+  font-family: var(--font-ar);
+}
+
+/* ✅ 6️⃣ Optional UI touch-ups (looks nice with bilingual apps) */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea {
+  transition: font-family 0.3s ease;
+}
+
+/* ✅ 7️⃣ Direction-based adjustments for layouts (optional) */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
