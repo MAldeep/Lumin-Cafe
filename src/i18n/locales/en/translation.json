@@ -1,9 +1,15 @@
 {
-  "header_Home" : "Home",
-  "Header_About" : "About",
-  "Header_Contact" : "Contact Us",
-  "Header_Menu" : "Menu",
-  "Header_Booking" : "Book a Table", 
-  "Hero_main" : "WELCOME TO LUMIN",
-  "Hero_sec" : "Freshly prepared, good coffee and food specialities."
+  "header_Home": "Home",
+  "Header_About": "About",
+  "Header_Contact": "Contact Us",
+  "Header_Menu": "Menu",
+  "Header_Booking": "Book a Table",
+  "Hero_main": "WELCOME TO LUMIN",
+  "Hero_sec": "Freshly prepared, good coffee and food specialities.",
+  "seller_title": "Tasty Coffee",
+  "seller_sec": "Freshly Roasted",
+  "seller_01" : "Croissant and Coffee",
+  "seller_02" : "French Coffee",
+  "seller_03" : "Cheese Cake",
+  "seller_btn": "Discover More"
 }
