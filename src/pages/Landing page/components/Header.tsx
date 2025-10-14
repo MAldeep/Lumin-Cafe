@@ -4,6 +4,7 @@ import HeaderLinks from "./HeaderLinks";
 import ToggleLanguage from "./ToggleLanguage";
 import SideMenu from "./SideMenu";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -16,9 +17,14 @@ export default function Header() {
   }, []);
   return (
     <header className="w-full px-4 lg:px-20 flex justify-between items-center">
-      <img src={logo} className="w-[120px] h-[120px] object-cover" />
+      <Link to={"/"}>
+        <img src={logo} className="w-[120px] h-[120px] object-cover" />
+      </Link>
       <ToggleLanguage />
-      <HeaderLinks className="w-[500px] hidden lg:flex justify-between items-center"  textColor="white"/>
+      <HeaderLinks
+        className="w-[500px] hidden lg:flex justify-between items-center"
+        textColor="white"
+      />
       <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       <HiMenuAlt3
         className={`text-2xl block lg:hidden ${

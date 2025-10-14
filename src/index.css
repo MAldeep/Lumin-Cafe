@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
 @import "tailwindcss";
 
 /* ✅ 3️⃣ Global font + direction rules */
@@ -6,7 +8,16 @@
   --font-en: "Poppins", sans-serif;
   --font-ar: "Cairo", sans-serif;
 }
-
+.tangerine-regular {
+  font-family: "Tangerine", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* Default to English (LTR) */
 html {
   font-family: var(--font-en);
