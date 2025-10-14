@@ -16,6 +16,7 @@ export default function App() {
     const timer = setTimeout(() => setLoading(false), 2500);
     return () => clearTimeout(timer);
   }, []);
+  //test
   return loading ? (
     <CoffeeLoader />
   ) : (
