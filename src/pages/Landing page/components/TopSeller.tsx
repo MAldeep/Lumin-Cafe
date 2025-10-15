@@ -21,11 +21,9 @@ export default function TopSeller() {
         </h2>
       </div>
       <div className="w-full px-4 lg:px-24 flex flex-col lg:flex-row justify-between items-center gap-8">
-        <SellerCard imgSrc={coffee01} text01={t("seller_01")} text02="hvaweyu"/>
-        <SellerCard imgSrc={coffee02} text01={t("seller_02")} text02="hvaweyu"/>
-        <SellerCard imgSrc={coffee03} text01={t("seller_03")} text02="hvaweyu"/>
-        {/* <SellerCard/>
-        <SellerCard/> */}
+        <SellerCard imgSrc={coffee01} text01={t("seller_01")} text02="A Brief description for each product"/>
+        <SellerCard imgSrc={coffee02} text01={t("seller_02")} text02="A Brief description for each product"/>
+        <SellerCard imgSrc={coffee03} text01={t("seller_03")} text02="A Brief description for each product"/>
       </div>
     </section>
   );

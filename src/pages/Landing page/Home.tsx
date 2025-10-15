@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import TopSeller from "./components/TopSeller";
 export default function Home() {
   return (
-    <main className="w-full relative">
+    <main className="w-full relative pb-96">
       <img src={hero} className="w-full h-dvh object-cover" />
       {/* The overlay */}
       <div className="w-full h-dvh bg-[rgba(0,0,0,0.7)] absolute inset-0">

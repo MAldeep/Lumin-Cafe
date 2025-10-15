@@ -24,7 +24,9 @@ html {
   direction: ltr;
   text-align: left;
 }
-
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 /* Arabic mode (RTL) */
 html[lang="ar"] {
   font-family: var(--font-ar);
