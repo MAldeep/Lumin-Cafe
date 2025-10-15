@@ -11,5 +11,8 @@
   "seller_01" : "Croissant and Coffee",
   "seller_02" : "French Coffee",
   "seller_03" : "Cheese Cake",
-  "seller_btn": "Discover More"
+  "seller_btn": "Discover More",
+  "discover_title" : "Discover",
+  "discover_sec" : "Our Story", 
+  "discover_btn" : "Read More"
 }
