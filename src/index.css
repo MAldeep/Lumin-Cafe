@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap");
 @import "tailwindcss";
 
 /* ✅ 3️⃣ Global font + direction rules */
@@ -64,11 +64,25 @@ textarea {
   transition: font-family 0.3s ease;
 }
 
-/* ✅ 7️⃣ Direction-based adjustments for layouts (optional) */
 [dir="rtl"] {
   text-align: right;
 }
 
 [dir="ltr"] {
   text-align: left;
+}
+swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  transition: opacity 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.8;
+}
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7);
+}
+.swiper-pagination-bullet-active {
+  background: white;
 }

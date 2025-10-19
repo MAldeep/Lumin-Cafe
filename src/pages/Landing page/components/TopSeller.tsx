@@ -8,45 +8,67 @@ import SellerCard from "./SellerCard";
 export default function TopSeller() {
   const { t, i18n } = useTranslation();
   const isArabic: boolean = i18n.language === "ar";
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.3,
+      },
+    },
+  };
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full bg-gray-100 flex flex-col h-[380vh] lg:h-[140vh] justify-center items-center gap-12"
+      className="w-full min-h-[120vh] bg-gradient-to-b from-amber-100 to-amber-200 flex flex-col justify-center items-center gap-16 py-20 px-4 lg:px-24 overflow-hidden"
     >
-      <div className="w-full text-center flex flex-col justify-center items-center gap-5">
+      {/* Title */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="text-center flex flex-col justify-center items-center gap-4"
+      >
         <h1
           className={`${
             isArabic ? "aref-ruqaa-regular" : "tangerine-regular"
-          } text-red-700 text-7xl font-bold`}
+          } text-amber-900 text-6xl md:text-7xl font-bold drop-shadow-sm`}
         >
           {t("seller_title")}
         </h1>
-        <h2 className="text-gray-700 text-5xl font-bold">
+        <h2 className="text-gray-800 text-3xl md:text-5xl font-extrabold tracking-wide">
           {t("seller_sec")}
         </h2>
-      </div>
+      </motion.div>
 
-      <div className="w-full px-4 lg:px-24 flex flex-col lg:flex-row justify-between items-center gap-8">
+      {/* Cards */}
+      <motion.div
+        variants={containerVariants}
+        className="w-full flex flex-col lg:flex-row justify-between items-center gap-10"
+      >
         <SellerCard
           imgSrc={coffee01}
           text01={t("seller_01")}
-          text02="A Brief description for each product"
+          text02="A brief description for each product."
         />
         <SellerCard
           imgSrc={coffee02}
           text01={t("seller_02")}
-          text02="A Brief description for each product"
+          text02="A brief description for each product."
         />
         <SellerCard
           imgSrc={coffee03}
           text01={t("seller_03")}
-          text02="A Brief description for each product"
+          text02="A brief description for each product."
         />
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

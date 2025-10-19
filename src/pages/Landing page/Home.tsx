@@ -4,11 +4,11 @@ import hero from "../../assets/images/hero.jpg";
 import Hero from "./components/Hero";
 import TopSeller from "./components/TopSeller";
 import DiscoverSection from "./components/DiscoverSection";
+import ProductsSlider from "./components/ProductsSlider";
 
 export default function Home() {
   return (
     <main className="w-full relative pb-96 overflow-hidden">
-      {/* Hero background with zoom-out (shrink) animation */}
       <motion.img
         src={hero}
         alt="Hero Background"
@@ -17,20 +17,19 @@ export default function Home() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{
           duration: 4,
-          ease: [0.25, 0.1, 0.25, 1], // smooth cubic-bezier
+          ease: [0.25, 0.1, 0.25, 1], 
         }}
       />
-
       {/* The overlay */}
       <div className="w-full h-dvh bg-[rgba(0,0,0,0.7)] absolute inset-0">
         <Header />
         {/* Hero Section */}
         <Hero />
       </div>
-
       {/* Other sections */}
       <TopSeller />
       <DiscoverSection />
+      <ProductsSlider/>
     </main>
   );
 }

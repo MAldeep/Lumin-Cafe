@@ -7,35 +7,55 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-7 lg:gap-14 mt-10 lg:mt-28">
-      {/* Rotating hero icon */}
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.2, ease: ["easeOut"] }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="w-full flex flex-col items-center justify-center gap-7 lg:gap-14 mt-10 lg:mt-28 text-center"
+    >
+      {/* Floating / rotating hero icon */}
       <motion.img
         src={heroIcon}
         alt="Hero Icon"
-        className="select-none"
-        animate={{ rotate: [0, 6, -6, 0] }} // gentle rocking effect
+        className="select-none w-28 h-28"
+        animate={{
+          rotate: [0, 6, -6, 0],
+          scale: [1, 1.05, 1],
+        }}
         transition={{
-          duration: 12,
+          duration: 10,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: ["easeInOut"],
         }}
       />
 
       {/* Text Section */}
-      <div className="w-full flex flex-col gap-5 p-5">
-        <h1 className="text-white text-4xl text-center font-bold font-stretch-75%">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.3, ease: ["easeOut"] }}
+        className="flex flex-col gap-5 p-5"
+      >
+        <h1 className="text-white text-4xl lg:text-6xl font-bold tracking-wide">
           {t("Hero_main")}
         </h1>
-        <h2 className="text-gray-300 text-center">{t("Hero_sec")}</h2>
-      </div>
+        <h2 className="text-gray-300 text-lg lg:text-2xl">{t("Hero_sec")}</h2>
+      </motion.div>
 
       {/* CTA Button */}
-      <Link
-        to={"/booking"}
-        className="bg-white/20 lg:bg-transparent hover:bg-white/20 text-white text-2xl lg:text-4xl px-8 lg:px-16 py-5 rounded-2xl transition-all duration-300"
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.5, ease: ["easeOut"] }}
       >
-        {t("Header_Booking")}
-      </Link>
-    </div>
+        <Link
+          to={"/booking"}
+          className="bg-white/20 lg:bg-transparent hover:bg-white/20 text-white text-2xl lg:text-4xl px-8 lg:px-16 py-5 rounded-2xl transition-all duration-300"
+        >
+          {t("Header_Booking")}
+        </Link>
+      </motion.div>
+    </motion.section>
   );
 }
