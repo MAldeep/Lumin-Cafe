@@ -12,7 +12,7 @@ export default function Hero() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2, ease: ["easeOut"] }}
       viewport={{ once: true, amount: 0.3 }}
-      className="w-full flex flex-col items-center justify-center gap-7 lg:gap-14 mt-10 lg:mt-28 text-center"
+      className="w-full flex flex-col items-center justify-center gap-7 lg:gap-14 mt-30 text-center"
     >
       {/* Floating / rotating hero icon */}
       <motion.img

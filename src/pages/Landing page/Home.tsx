@@ -5,10 +5,11 @@ import Hero from "./components/Hero";
 import TopSeller from "./components/TopSeller";
 import DiscoverSection from "./components/DiscoverSection";
 import ProductsSlider from "./components/ProductsSlider";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full relative pb-96 overflow-hidden">
+    <main className="w-full relative overflow-hidden">
       <motion.img
         src={hero}
         alt="Hero Background"
@@ -30,6 +31,7 @@ export default function Home() {
       <TopSeller />
       <DiscoverSection />
       <ProductsSlider/>
+      <Footer/>
     </main>
   );
 }

@@ -1,6 +1,6 @@
 {
   "header_Home": "Home",
-  "Header_About": "About",
+  "Header_About": "About Us",
   "Header_Contact": "Contact Us",
   "Header_Menu": "Menu",
   "Header_Booking": "Book a Table",
@@ -15,5 +15,6 @@
   "discover_title" : "Discover",
   "discover_sec" : "Our Story", 
   "discover_btn" : "Read More", 
-  "slider_title" : "Discover the Art of Coffee & Dessert"
+  "slider_title" : "Discover the Art of Coffee & Dessert",
+  "Download_Menu" : "Download Menu"
 }

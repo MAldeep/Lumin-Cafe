@@ -16,6 +16,8 @@ import slider9 from "./images/slider-09.JPG";
 import slider10 from "./images/slider-10.JPG";
 import slider11 from "./images/slider-11.JPG";
 import slider12 from "./images/slider-12.JPG";
+import menuHero from "./images/menuHero.jpg";
+import menu from "./images/menu.jpg";
 
 export const images = {
   logo,
@@ -38,4 +40,6 @@ export const images = {
     slider11,
     slider12,
   ],
+  menuHero,
+  menu,
 };
