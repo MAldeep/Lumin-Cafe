@@ -8,7 +8,6 @@ import { useTranslation } from "react-i18next";
 // import "swiper/css/pagination";
 import "swiper/swiper-bundle.css";
 
-
 export default function ProductsSlider() {
   const { t, i18n } = useTranslation();
   const isArabic: boolean = i18n.language === "ar";
@@ -33,6 +32,7 @@ export default function ProductsSlider() {
       {/* Swiper */}
       <div className="w-[90%] md:w-[85%] lg:w-[80%]">
         <Swiper
+          key={i18n.language}
           modules={[Autoplay, Navigation, Pagination]}
           loop={true}
           breakpoints={{
