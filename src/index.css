@@ -71,17 +71,20 @@ textarea {
 [dir="ltr"] {
   text-align: left;
 }
-swiper-button-prev,
+.swiper-button-prev,
 .swiper-button-next {
-  color: white;
+  color: #F59E0B !important;
   transition: opacity 0.3s;
+  background-color: #FFF7ED;
+  padding: 6px;
+  border-radius: 50%;
+}
+.swiper-pagination-bullet {
+  background: #F59E0B !important;
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   opacity: 0.8;
-}
-.swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.7);
 }
 .swiper-pagination-bullet-active {
   background: white;

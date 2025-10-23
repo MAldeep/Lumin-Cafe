@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../../pages/Landing page/Home";
 import Menu from "../../pages/Menu/Menu";
+import About from "../../pages/About/About";
+import Contact from "../../pages/Contact/Contact";
 
 export default function AllRoutes() {
   return (
@@ -8,10 +10,10 @@ export default function AllRoutes() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<h1>About Page</h1>} />
+          <Route path="/about" element={<About/>} />
           <Route path="/menu" element={<Menu/>} />
           <Route path="/booking" element={<h1>Booking Page</h1>} />
-          <Route path="/contact" element={<h1>Contact Page</h1>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
       </BrowserRouter>
     </div>

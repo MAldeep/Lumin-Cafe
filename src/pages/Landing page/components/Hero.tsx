@@ -14,7 +14,6 @@ export default function Hero() {
       viewport={{ once: true, amount: 0.3 }}
       className="w-full flex flex-col items-center justify-center gap-7 lg:gap-14 mt-30 text-center"
     >
-      {/* Floating / rotating hero icon */}
       <motion.img
         src={heroIcon}
         alt="Hero Icon"
@@ -29,8 +28,6 @@ export default function Hero() {
           ease: ["easeInOut"],
         }}
       />
-
-      {/* Text Section */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -16,5 +16,8 @@
   "discover_sec" : "Our Story", 
   "discover_btn" : "Read More", 
   "slider_title" : "Discover the Art of Coffee & Dessert",
-  "Download_Menu" : "Download Menu"
+  "Download_Menu" : "Download Menu", 
+  "phone_title" : "Phone Number :",
+  "email_title" : "E-mail :",
+  "address_title" : "Address :"
 }

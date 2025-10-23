@@ -4,6 +4,7 @@ import Header from "../Landing page/components/Header";
 import { motion, AnimatePresence } from "framer-motion";
 import { images } from "../../assets/images";
 import { Download } from "lucide-react"; // Optional: for an icon
+import Footer from "../Landing page/components/Footer";
 
 export default function Menu() {
   const { t, i18n } = useTranslation();
@@ -12,7 +13,7 @@ export default function Menu() {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-gray-50">
-      {/* === Hero Section === */}
+      {/*  Hero Section */}
       <motion.div
         className="relative w-full h-[75vh] overflow-hidden"
         initial={{ opacity: 0 }}
@@ -44,7 +45,6 @@ export default function Menu() {
         </motion.h1>
       </motion.div>
 
-      {/* === Menu Image Section === */}
       <motion.section
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,6 @@ export default function Menu() {
         className="relative w-full px-4 lg:px-20 py-20 flex justify-center items-center bg-gradient-to-b from-red-50 via-white to-red-100"
       >
         <div className="relative w-full max-w-6xl p-10 lg:p-16 bg-[#f9f4ef] rounded-3xl shadow-2xl flex justify-center items-center">
-          {/* Decorative border frame */}
           <motion.div
             className="absolute -inset-3 border-4 border-amber-950 rounded-3xl opacity-40"
             initial={{ scale: 0.95, opacity: 0 }}
@@ -61,7 +60,6 @@ export default function Menu() {
             transition={{ duration: 1, delay: 0.2, ease: ["easeOut"] }}
           />
 
-          {/* Menu image (clickable) */}
           <motion.img
             src={images.menu}
             alt="Menu"
@@ -73,7 +71,6 @@ export default function Menu() {
         </div>
       </motion.section>
 
-      {/* === Fullscreen Zoom + Download Button === */}
       <AnimatePresence>
         {isZoomed && (
           <motion.div
@@ -96,8 +93,6 @@ export default function Menu() {
                 ease: [0.25, 0.1, 0.25, 1],
               }}
             />
-
-            {/* ✨ Floating Download Button */}
             <motion.a
               href={images.menu}
               download="Coffee_Menu.jpg"
@@ -114,6 +109,7 @@ export default function Menu() {
           </motion.div>
         )}
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

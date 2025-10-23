@@ -16,5 +16,8 @@
   "discover_sec" : "قصتنا",
   "discover_btn" : "أقرأ أكثر",
   "slider_title" : "اكتشف فن القهوة والحلويات",
-  "Download_Menu" : "تنزيل القائمة"
+  "Download_Menu" : "تنزيل القائمة",
+  "phone_title" : "رقم الهاتف :",
+  "email_title" : "البريد الالكتروني :",
+  "address_title" : "العنوان :"
 }

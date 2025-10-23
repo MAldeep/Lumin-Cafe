@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { images } from "../../../assets/images";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,7 +12,13 @@ export default function ProductsSlider() {
   const isArabic: boolean = i18n.language === "ar";
 
   return (
-    <section className="relative w-full min-h-[80vh] bg-gradient-to-b from-amber-50 to-amber-100 py-16 flex flex-col items-center justify-center overflow-hidden">
+    <motion.section
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="relative w-full min-h-[80vh] bg-gradient-to-b from-amber-50 to-amber-100 py-16 flex flex-col items-center justify-center overflow-hidden"
+    >
       {/* Title */}
       <h1
         className={`text-center text-5xl md:text-6xl lg:text-7xl font-bold text-amber-900 tracking-wide mb-10 drop-shadow-sm ${
@@ -55,6 +62,6 @@ export default function ProductsSlider() {
           ))}
         </Swiper>
       </div>
-    </section>
+    </motion.section>
   );
 }
