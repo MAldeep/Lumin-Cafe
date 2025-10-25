@@ -3,6 +3,7 @@ import Home from "../../pages/Landing page/Home";
 import Menu from "../../pages/Menu/Menu";
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
+import Booking from "../../pages/Booking/Booking";
 
 export default function AllRoutes() {
   return (
@@ -12,7 +13,7 @@ export default function AllRoutes() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/menu" element={<Menu/>} />
-          <Route path="/booking" element={<h1>Booking Page</h1>} />
+          <Route path="/booking" element={<Booking/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       </BrowserRouter>

@@ -3,9 +3,6 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { images } from "../../../assets/images";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
 import "swiper/swiper-bundle.css";
 
 export default function ProductsSlider() {
