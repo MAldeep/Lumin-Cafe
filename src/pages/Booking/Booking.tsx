@@ -10,11 +10,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import BookingHero from "./components/BookingHero";
 import Footer from "../Landing page/components/Footer";
 import ProgressionBar from "./components/ProgressionBar";
-import { SlCalender } from "react-icons/sl";
-import { FaClock } from "react-icons/fa6";
-import { IoPersonSharp } from "react-icons/io5";
-import { MdEmail, MdEventSeat } from "react-icons/md";
-import { GrNotes } from "react-icons/gr";
 
 
 
@@ -49,12 +44,12 @@ export default function Booking() {
     const data = { ...reservationData, ...values } as FormValues;
 
     const message = encodeURIComponent(
-      `${<SlCalender />} Date: ${data.date}\n ${<FaClock />} Time: ${data.time}\n${<IoPersonSharp />} Guests: ${
+      `📅 Date: ${data.date}\n 🕒 Time: ${data.time}\n👥 Guests: ${
         data.geusts
-      }\n${<MdEventSeat />} Seating: ${data.seating}\n${<IoPersonSharp />} Name: ${data.name}\n📞 Phone: ${
+      }\n🪑 Seating: ${data.seating}\n👤 Name: ${data.name}\n📞 Phone: ${
         data.phone
-      }\n${data.email ? `${<MdEmail />} Email: ${data.email}\n` : ""}${
-        data.notes ? `${<GrNotes />} Notes: ${data.notes}\n` : ""
+      }\n${data.email ? `📧 Email: ${data.email}\n` : ""}${
+        data.notes ? `📝 Notes: ${data.notes}\n` : ""
       }`
     );
 
