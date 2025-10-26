@@ -10,14 +10,16 @@ export default function LocationCard() {
   const handleOpenMap = () => {
     window.open(mapUrl, "_blank");
   };
-  const {t ,i18n} = useTranslation();
+
+  const { t, i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
+
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       onClick={handleOpenMap}
-      className=" cursor-pointer"
+      className="cursor-pointer"
     >
       <div className="bg-white rounded-2xl shadow-md hover:shadow-lg overflow-hidden transition-all duration-300">
         {/* Map */}
@@ -28,21 +30,21 @@ export default function LocationCard() {
             height="100%"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="border-0"
+            className="border-0 pointer-events-none" // 👈 makes the map non-interactive, allowing card click
           ></iframe>
         </div>
 
         {/* Info */}
         <div className="p-5 text-center">
           <MapPin className="w-8 h-8 text-amber-900 mx-auto mb-2" />
-          <h2 className="text-xl font-semibold mb-1">{isArabic ? "موقعنا" : "Our location"}</h2>
+          <h2 className="text-xl font-semibold mb-1">
+            {isArabic ? "موقعنا" : "Our Location"}
+          </h2>
           <p className="text-gray-600">{t("footer_address")}</p>
           <p className="text-sm text-gray-400 mt-2">
-            {
-              isArabic ? 
-              "اضغط على البطاقة لفتح الموقع في خرائط جوجل"
-              : "Click the card to open the loaction on google maps"
-            }
+            {isArabic
+              ? "اضغط على البطاقة لفتح الموقع في خرائط جوجل"
+              : "Click the card to open the location on Google Maps"}
           </p>
         </div>
       </div>
