@@ -36,23 +36,10 @@ export default function DiscoverSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, delay: 0.3 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-extrabold tracking-wide text-gray-900"
+          className={`text-2xl  tracking-wide text-gray-700 text-center ${isArabic ? "text-center" : "text-start"}`}
         >
           {t("discover_sec")}
         </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-gray-600 max-w-md text-lg leading-relaxed"
-        >
-          {
-            "A brief about the company — our story, our passion, and the flavors that make every cup and dessert unforgettable."
-          }
-        </motion.p>
-
         {/* Button */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}

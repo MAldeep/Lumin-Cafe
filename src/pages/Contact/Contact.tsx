@@ -6,6 +6,7 @@ import ContactCard from "./components/ContactCard";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Footer from "../Landing page/components/Footer";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
@@ -50,17 +51,17 @@ export default function Contact() {
           {/* phone number */}
           <ContactCard
             title={t("phone_title")}
-            value="01064661009"
+            value="+966548010223"
             icon={FaPhoneAlt}
           />
           {/* email */}
           <ContactCard
             title={t("email_title")}
-            value="m7mdeldeeeep@gmail.com"
+            value="luminalsharq6@gmail.com"
             icon={MdEmail}
           />
           {/* address */}
-          <ContactCard title={t("address_title")} value="" icon={FaPhoneAlt} />
+          <ContactCard title={t("address_title")} value={t("footer_address")} icon={FaLocationDot} />
         </motion.div>
       </div>
       <Footer />

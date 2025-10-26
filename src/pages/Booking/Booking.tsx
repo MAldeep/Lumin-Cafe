@@ -11,7 +11,7 @@ import BookingHero from "./components/BookingHero";
 import Footer from "../Landing page/components/Footer";
 import ProgressionBar from "./components/ProgressionBar";
 
-const WHATSAPP_NUMBER = "+201093998138";
+const WHATSAPP_NUMBER = "+966548010223";
 type Step = 1 | 2 | 3 | 4;
 interface FormValues {
   date: string;

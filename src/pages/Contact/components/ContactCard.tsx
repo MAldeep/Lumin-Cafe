@@ -16,7 +16,8 @@ export default function ContactCard({ title, value, icon: Icon }: Props) {
       <motion.div
         className="flex justify-center items-center gap-2.5"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{once : true , amount : 0.3}}
         transition={{ duration: 1, delay: 0.5, ease: ["easeIn"] }}
       >
         <Icon className="text-sm lg:text-2xl text-gray-700" />
@@ -27,7 +28,7 @@ export default function ContactCard({ title, value, icon: Icon }: Props) {
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 1, delay: 3, ease: ["easeIn"] }}
+        transition={{ duration: 1, delay: 1.2, ease: ["easeIn"] }}
       >
         {value}
       </motion.h3>

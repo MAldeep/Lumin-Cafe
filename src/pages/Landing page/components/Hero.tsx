@@ -20,7 +20,7 @@ export default function Hero() {
         className="select-none w-28 h-28"
         animate={{
           rotate: [0, 6, -6, 0],
-          scale: [1, 1.05, 1],
+          scale: [1, 1.1, 1],
         }}
         transition={{
           duration: 10,
