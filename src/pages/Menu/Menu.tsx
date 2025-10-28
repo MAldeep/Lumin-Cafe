@@ -1,15 +1,17 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../Landing page/components/Header";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { images } from "../../assets/images";
-import { Download } from "lucide-react"; // Optional: for an icon
+// import { Download } from "lucide-react"; // Optional: for an icon
 import Footer from "../Landing page/components/Footer";
+import { menuData } from "../../shared/menu-data/menuData";
+import CategoryCard from "./components/CategoryCard";
 
 export default function Menu() {
   const { t, i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
-  const [isZoomed, setIsZoomed] = useState(false);
+  // const [isZoomed, setIsZoomed] = useState(false);
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-gray-50">
@@ -44,8 +46,27 @@ export default function Menu() {
           {t("Header_Menu")}
         </motion.h1>
       </motion.div>
-
-      <motion.section
+          <motion.section
+            initial={{opacity : 0 , y : 80}}
+            whileInView={{opacity : 1 , y : 0}}
+            transition={{duration : 1.2 , ease : ["easeInOut"]}}
+            viewport={{once : true , amount : 0.3}}
+            className="w-full px-4 lg:px-20 py-20 flex flex-col lg:flex-row gap-3 flex-wrap cursor-pointer justify-center items-center bg-gradient-to-b from-red-50 via-white to-red-100"
+          >
+            {/* map on categories */}
+            {
+              menuData.map((cat)=> (
+                <CategoryCard
+                  key={cat.id}
+                  id={cat.id}
+                  img={cat.img}
+                  titleEn={cat.titleEn}
+                  titleAr={cat.titleAr}
+                />
+              ))
+            }
+          </motion.section>
+      {/* <motion.section
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: ["easeOut"] }}
@@ -69,9 +90,9 @@ export default function Menu() {
             onClick={() => setIsZoomed(true)}
           />
         </div>
-      </motion.section>
+      </motion.section> */}
 
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isZoomed && (
           <motion.div
             className="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-sm"
@@ -108,7 +129,7 @@ export default function Menu() {
             </motion.a>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
       <Footer />
     </div>
   );

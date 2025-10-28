@@ -7,3 +7,4 @@ declare module "*.svg";
 declare module "*.webp";
 declare module "*.JPG";
 declare module "*.PNG";
+declare module "*.MP4";

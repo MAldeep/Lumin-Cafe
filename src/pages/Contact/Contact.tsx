@@ -57,7 +57,7 @@ export default function Contact() {
           {/* email */}
           <ContactCard
             title={t("email_title")}
-            value="luminalsharq6@gmail.com"
+            value="lumincafe@gmail.com"
             icon={MdEmail}
           />
           {/* address */}

@@ -1,8 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaSquareInstagram } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import LocationCard from "./LocationCard";
+import { AiFillTikTok } from "react-icons/ai";
+import { FaSnapchatGhost } from "react-icons/fa";
+
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -38,6 +41,29 @@ export default function Footer() {
       </div>
       {/* lower section */}
       <div className="w-full border-t-2 border-dotted border-gray-400 flex flex-col lg:flex-row justify-between pt-2">
+        <div className="flex items-center justify-center gap-2.5">
+          <p className="text-sm text-gray-400">
+            Follow Us :
+          </p>
+          <Link
+            target="_blank"
+            to={"https://www.tiktok.com/@lumin.cafe?_t=ZS-90tZzw6I02x&_r=1"}
+          >
+            <AiFillTikTok className="text-2xl text-gray-200"/>
+          </Link>
+          <Link
+            target="_blank"
+            to={"https://www.instagram.com/lumin.cafe/"}
+          >
+            <FaSquareInstagram className="text-2xl text-gray-200"/>
+          </Link>
+          <Link
+            target="_blank"
+            to={"https://www.snapchat.com/add/lumincafe?share_id=haC0gbJVXac&locale=ar-SA-u-nu-latn"}
+          >
+            <FaSnapchatGhost className="text-2xl text-gray-200"/>
+          </Link>
+        </div>
         <p className="text-sm text-gray-400">@2025 Designed by : <span className="text-sm text-amber-400">Trio Advertising</span></p>
       </div>
     </footer>

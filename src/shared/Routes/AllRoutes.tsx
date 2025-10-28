@@ -4,6 +4,7 @@ import Menu from "../../pages/Menu/Menu";
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
 import Booking from "../../pages/Booking/Booking";
+import SingleCategory from "../../pages/Menu/components/SingleCategory";
 
 export default function AllRoutes() {
   return (
@@ -13,6 +14,7 @@ export default function AllRoutes() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/menu" element={<Menu/>} />
+          <Route path="/menu/:id" element={<SingleCategory/>} />
           <Route path="/booking" element={<Booking/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
