@@ -13,7 +13,7 @@ export default function App() {
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   }, [i18n.isInitialized, i18n.language]);
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2500);
+    const timer = setTimeout(() => setLoading(false), 3500);
     return () => clearTimeout(timer);
   }, []);
   //test

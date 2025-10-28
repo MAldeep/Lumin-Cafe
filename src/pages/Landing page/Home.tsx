@@ -13,6 +13,7 @@ export default function Home() {
       <motion.img
         src={hero}
         alt="Hero Background"
+        loading="lazy"
         className="w-full h-dvh object-cover"
         initial={{ scale: 1.3, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

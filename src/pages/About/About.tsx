@@ -116,7 +116,6 @@ export default function About() {
               muted
               playsInline
               src={images.about_vid}
-              
             />
           </motion.div>
         </motion.div>

@@ -51,6 +51,7 @@ export default function ProductsSlider() {
             <SwiperSlide key={index}>
               <div className="relative overflow-hidden rounded-3xl shadow-lg group transition-transform duration-500 hover:-translate-y-2">
                 <img
+                  loading="lazy"
                   src={img}
                   alt={`slide-${index}`}
                   className="w-full h-[400px] object-cover rounded-3xl"
