@@ -19,7 +19,7 @@ import slider12 from "./images/slider-12.JPG";
 import menuHero from "./images/menuHero.jpg";
 import menu from "./images/menu.jpg";
 import aboutHeader from "./images/aboutHeader.JPG";
-import about_vid from "./images/about_vid.MP4";
+import about_vid from "./images/about_vid.mp4";
 
 export const images = {
   logo,
