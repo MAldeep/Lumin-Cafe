@@ -16,7 +16,7 @@ export default function SingleProduct({titleEn , titleAr , img , price} : Props)
     whileInView={{opacity : 1}}
     viewport={{once : true , amount : 0.3}}
     transition={{duration : 1.2 , ease : ["easeInOut"]}}
-    className="w-full lg:w-1/3 flex justify-between items-center gap-2.5"
+    className="w-full lg:w-1/3 flex justify-between items-center gap-2.5 mb-5 lg:mb-10"
     >
       <motion.img
         initial={{opacity : 0 , scale : 0.8}}
