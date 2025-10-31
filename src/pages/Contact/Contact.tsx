@@ -25,7 +25,7 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 1.2 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 3, ease: [0.25, 0.1, 0.25, 1] }}
-          src={images.coffee02}
+          src={images.aboutHeader}
         />
         <div className="absolute inset-0 bg-black/60" />
         <Header />

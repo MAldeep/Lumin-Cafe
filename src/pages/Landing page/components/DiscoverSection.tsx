@@ -6,7 +6,6 @@ import discover from "../../../assets/images/discover.jpg";
 export default function DiscoverSection() {
   const { t, i18n } = useTranslation();
   const isArabic: boolean = i18n.language === "ar";
-
   return (
     <motion.section
       initial={{ opacity: 0, y: 80 }}

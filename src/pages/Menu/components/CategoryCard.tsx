@@ -43,7 +43,7 @@ export default function CategoryCard({id , img , titleEn , titleAr} : Props) {
           viewport={{once : true , amount : 0.3}}
           transition={{duration : 1.2 , ease : ["easeInOut"]}}
           className={
-            `text-7xl text-amber-400 font-bold ${isArabic ? "aref-ruqaa-regular" : "tangerine-regular"}`
+            `text-4xl text-amber-400 font-bold ${isArabic ? "aref-ruqaa-regular" : "tangerine-regular"}`
           }
         >
           {

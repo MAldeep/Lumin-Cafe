@@ -55,7 +55,7 @@ export default function Menu() {
           >
             {/* map on categories */}
             {
-              menuData.map((cat)=> (
+              menuData.map((cat )=> (
                 <CategoryCard
                   key={cat.id}
                   id={cat.id}

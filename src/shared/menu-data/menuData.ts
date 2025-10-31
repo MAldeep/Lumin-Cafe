@@ -272,10 +272,102 @@ export const menuData: Category[] = [
         img: images.tea,
         price: "5",
       },
-    ]
+    ],
+  },
+  // Desserts
+  {
+    id: 5,
+    titleEn: "Desserts",
+    titleAr: "الحلويات",
+    img: images.hero,
+    products: [
+      {
+        id: 51,
+        titleEn: "Date Molten Cake",
+        titleAr: "مولتن تمر",
+        img: images.date_molten_cake,
+        price: "20",
+      },
+      {
+        id: 52,
+        titleEn: "Galaxy Cake",
+        titleAr: "جلاكسي",
+        img: images.galaxy_cake,
+        price: "20",
+      },
+      {
+        id: 53,
+        titleEn: "Tiramisu",
+        titleAr: "ترامسيو",
+        img: images.tiramisu,
+        price: "20",
+      },
+      {
+        id: 54,
+        titleEn: "Honey Cake",
+        titleAr: "كيكة العسل",
+        img: images.honey_cake,
+        price: "20",
+      },
+      {
+        id: 55,
+        titleEn: "Upside-Down Cheese Cake",
+        titleAr: "تشيز كيك مقلوبة",
+        img: images.up_down_cake,
+        price: "25",
+      },
+      {
+        id: 56,
+        titleEn: "Pudding Cup",
+        titleAr: "بودينج كوب",
+        img: images.pudding,
+        price: "25",
+      },
+      {
+        id: 57,
+        titleEn: "Crunch Cheesecake",
+        titleAr: "كرنش تشيز كيك",
+        img: images.crunch_cheese_cake,
+        price: "25",
+      },
+      {
+        id: 58,
+        titleEn: "San Sebastian Cheesecake",
+        titleAr: "سان سبستيان",
+        img: images.san_sebstian,
+        price: "25",
+      },
+      {
+        id: 59,
+        titleEn: "French Toast",
+        titleAr: "فرينش توست",
+        img: images.french_toast,
+        price: "25",
+      },
+    ],
+  },
+  // ice cream
+  {
+    id: 6,
+    titleEn: "Ice Cream",
+    titleAr: "أيس كريم",
+    img: images.hero,
+    products: [
+      {
+        id: 61,
+        titleEn: "Peanut Butter Ice Cream",
+        titleAr: "بينت باتر",
+        img: images.peanut_ice_cream,
+        price: "15",
+      },
+      {
+        id: 62,
+        titleEn: "Mango Ice Cream",
+        titleAr: "مانجو",
+        img: images.mango_ice_cream,
+        price: "15",
+      },
+    ],
   },
 ];
 
-// array ==> so i can map on sections
-// object ==> so i can access
-// products => array ==> so i can map

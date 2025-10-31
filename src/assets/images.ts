@@ -1,82 +1,81 @@
-import logo from "./images/logo.png";
-import hero from "./images/hero.jpg";
-import heroIcon from "./images/hero-icon.png";
-import coffee01 from "./images/coffee-01.jpg";
-import coffee02 from "./images/coffee-02.jpg";
-import coffee03 from "./images/coffee-03.jpg";
-import discover from "./images/discover.jpg";
-import slider1 from "./images/slider-01.JPG";
-import slider2 from "./images/slider-02.JPG";
-import slider3 from "./images/slider-03.JPG";
-import slider4 from "./images/slider-04.JPG";
-import slider6 from "./images/slider-06.JPG";
-import slider7 from "./images/slider-07.JPG";
-import slider8 from "./images/slider-08.JPG";
-import slider9 from "./images/slider-09.JPG";
-import slider10 from "./images/slider-10.JPG";
-import slider11 from "./images/slider-11.JPG";
-import slider12 from "./images/slider-12.JPG";
-import menuHero from "./images/menuHero.jpg";
-import menu from "./images/menu.jpg";
-import aboutHeader from "./images/aboutHeader.JPG";
-import about_vid from "./images/about_vid.mp4";
-import iced_americano from "./images/iced_americano.png";
-import iced_latte from "./images/iced_latte.png";
-import spanish_latte from "./images/spanish_latte.png";
-import white_mocha from "./images/white_mocha.png";
-import mocha from "./images/mocha.png";
-import blue_latte from "./images/blue_latte.png";
-import saffron_latte from "./images/saffron_latte.png";
-import cold_brew from "./images/cold_brew.png";
-import v60 from "./images/v60.png";
-import Lumin_Mojito from "./images/Lumin_Mojito.png";
-import special_redbull from "./images/special_redbull.png";
-import refresh from "./images/refresh.png";
-import Hibiscus from "./images/Hibiscus.png";
-import havana from "./images/havana.png";
-import smoke from "./images/smoke.png";
-import espresso from "./images/Espresso.jpg";
-import cortado from "./images/cortado.png";
-import flat_white from "./images/flat_white.png";
+import logo from "./images/logo.png"; // done
+import hero from "./images/hero.jpg"; // done
+import heroIcon from "./images/hero-icon.png"; // done
+import discover from "./images/discover.jpg"; // done
+import menuHero from "./images/menuHero.jpg"; // done
+import aboutHeader from "./images/aboutHeader.JPG"; // done
+import about_vid from "./images/about_vid.mp4"; // done
+import iced_americano from "./images/iced_americano.png"; // done
+import iced_latte from "./images/iced_latte.png"; // done
+import spanish_latte from "./images/spanish_latte.png"; // done
+import white_mocha from "./images/white_mocha.png"; // done
+import mocha from "./images/mocha.png";  // done
+import blue_latte from "./images/blue_latte.png";// done
+import saffron_latte from "./images/saffron_latte.png"; // done
+import cold_brew from "./images/cold_brew.png"; // done
+import v60 from "./images/v60.png"; // done
+import Lumin_Mojito from "./images/Lumin_Mojito.png"; // done
+import special_redbull from "./images/special_redbull.png"; // done
+import refresh from "./images/refresh.png"; // done
+import Hibiscus from "./images/Hibiscus.png"; // done
+import havana from "./images/havana.png"; // done
+import smoke from "./images/smoke.png"; // done
+import espresso from "./images/Espresso.jpg"; // done
+import cortado from "./images/cortado.png"; // done
+import flat_white from "./images/flat_white.png"; // done
 import cappuccino from "./images/Cappuccino.png";
-import latte from "./images/latte.png";
-import spanish_latte_hot from "./images/spanish_latte_hot.png";
-import white_mocha_hot from "./images/white_mocha_hot.png";
-import mocha_hot from "./images/mocha_hot.jpg";
-import americano from "./images/americano.png";
-import piccato from "./images/Piccato.jpg";
-import coffee_v60 from "./images/coffee_v60.png";
-import zaafran from "./images/Zaafran.jpg";
-import blue_latte_hot from "./images/blue_latte_hot.jpg";
-import sahlab from "./images/sahlab.jpg";
-import custard from "./images/custard.jpg";
-import hot_choclate from "./images/hot_choclate.jpg";
-import brad_tea from "./images/brad_tea.jpg";
-import tea from "./images/tea.jpg";
+import latte from "./images/latte.png"; // done
+import spanish_latte_hot from "./images/spanish_latte_hot.png"; // done
+import white_mocha_hot from "./images/white_mocha_hot.png"; // done
+import mocha_hot from "./images/mocha_hot.jpg"; // done
+import americano from "./images/americano.png"; // done
+import piccato from "./images/Piccato.jpg"; // done
+import coffee_v60 from "./images/coffee_v60.png"; // done
+import zaafran from "./images/Zaafran.jpg"; // done
+import blue_latte_hot from "./images/blue_latte_hot.jpg"; // done
+import sahlab from "./images/sahlab.jpg"; // done
+import custard from "./images/custard.jpg"; // done
+import hot_choclate from "./images/hot_choclate.jpg"; // done
+import brad_tea from "./images/brad_tea.jpg"; // done
+import tea from "./images/tea.jpg"; // done
+import date_molten_cake from "./images/date_molten_cake.JPG"; // done
+import galaxy_cake from "./images/galaxy_cake.JPG"; // done
+import tiramisu from "./images/tiramisu.JPG"; // done
+import honey_cake from "./images/honey_cake.JPG"; // done
+import up_down_cake from "./images/up_down_cake.JPG"; // done
+import pudding from "./images/pudding.JPG"; // done
+import crunch_cheese_cake from "./images/crunch_cheese_cake.JPG"; // done
+import san_sebstian from "./images/san_sebestian.JPG"; // done
+import french_toast from "./images/frensh_toast.JPG"; // done
+import peanut_ice_cream from "./images/peanut_ice_cream.jpg"; // done
+import mango_ice_cream from "./images/mango_ice_cream.jpg"; // done
 
 export const images = {
   logo,
   hero,
   heroIcon,
-  coffee01,
-  coffee02,
-  coffee03,
   discover,
   sliderImages: [
-    slider1,
-    slider2,
-    slider3,
-    slider4,
-    slider6,
-    slider7,
-    slider8,
-    slider9,
-    slider10,
-    slider11,
-    slider12,
+    date_molten_cake,
+    galaxy_cake,
+    tiramisu,
+    honey_cake,
+    up_down_cake,
+    pudding,
+    crunch_cheese_cake,
+    san_sebstian,
+    french_toast,
+    peanut_ice_cream,
+    mango_ice_cream,
+    Lumin_Mojito,
+    special_redbull,
+    refresh,
+    Hibiscus,
+    havana,
+    smoke,
+    espresso,
   ],
   menuHero,
-  menu,
   aboutHeader,
   about_vid,
   iced_americano,
@@ -111,5 +110,16 @@ export const images = {
   custard,
   hot_choclate,
   brad_tea,
-  tea
+  tea,
+  date_molten_cake,
+  galaxy_cake,
+  tiramisu,
+  honey_cake,
+  up_down_cake,
+  pudding,
+  crunch_cheese_cake,
+  san_sebstian,
+  french_toast,
+  peanut_ice_cream,
+  mango_ice_cream,
 };

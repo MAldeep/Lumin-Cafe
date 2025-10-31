@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import coffee01 from "../../../assets/images/coffee-01.jpg";
-import coffee02 from "../../../assets/images/coffee-02.jpg";
-import coffee03 from "../../../assets/images/coffee-03.jpg";
 import SellerCard from "./SellerCard";
+import { images } from "../../../assets/images";
 
 export default function TopSeller() {
   const { t, i18n } = useTranslation();
@@ -54,17 +52,17 @@ export default function TopSeller() {
         className="w-full flex flex-col lg:flex-row justify-between items-center gap-10"
       >
         <SellerCard
-          imgSrc={coffee01}
+          imgSrc={images.spanish_latte}
           text01={t("seller_01")}
           text02="A brief description for each product."
         />
         <SellerCard
-          imgSrc={coffee02}
+          imgSrc={images.Lumin_Mojito}
           text01={t("seller_02")}
           text02="A brief description for each product."
         />
         <SellerCard
-          imgSrc={coffee03}
+          imgSrc={images.galaxy_cake}
           text01={t("seller_03")}
           text02="A brief description for each product."
         />

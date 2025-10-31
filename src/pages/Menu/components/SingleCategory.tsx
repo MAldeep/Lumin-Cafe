@@ -49,24 +49,23 @@ export default function SingleCategory() {
       </motion.div>
       <motion.section
         initial={{ opacity: 0, y: 80 }}
+        animate={{ opacity: 1, y: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: ["easeInOut"] }}
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="w-full px-8 lg:px-28 py-20 flex flex-col lg:flex-row gap-8  flex-wrap justify-between items-center bg-gradient-to-b from-red-50 via-white to-red-100"
       >
-        {
-          category.products.map((product) => (
-            <SingleProduct
-              key={product.id}
-              img={product.img}
-              titleEn={product.titleEn}
-              titleAr={product.titleAr}
-              price={product.price}
-            />
-          ))
-        }
+        {category.products.map((product) => (
+          <SingleProduct
+            key={product.id}
+            img={product.img}
+            titleEn={product.titleEn}
+            titleAr={product.titleAr}
+            price={product.price}
+          />
+        ))}
       </motion.section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

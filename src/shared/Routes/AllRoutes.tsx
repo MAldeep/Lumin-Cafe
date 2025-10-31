@@ -5,11 +5,13 @@ import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
 import Booking from "../../pages/Booking/Booking";
 import SingleCategory from "../../pages/Menu/components/SingleCategory";
+import { ScrollToTop } from "../components/ScrollToTop";
 
 export default function AllRoutes() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />

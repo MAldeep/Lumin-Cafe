@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import AllRoutes from "./shared/Routes/AllRoutes";
 import CoffeeLoader from "./pages/Landing page/components/CoffeeLoader";
+// import { ScrollToTop } from "./shared/components/ScrollToTop";
 
 export default function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -21,6 +22,7 @@ export default function App() {
     <CoffeeLoader />
   ) : (
     <div>
+      {/* <ScrollToTop/> */}
       <AllRoutes />
       {/* <Footer/> */}
     </div>
