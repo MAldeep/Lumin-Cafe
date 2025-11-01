@@ -5,10 +5,9 @@ import { motion } from "framer-motion";
 interface Props {
   imgSrc: string;
   text01: string;
-  text02: string;
 }
 
-export default function SellerCard({ imgSrc, text01, text02 }: Props) {
+export default function SellerCard({ imgSrc, text01 }: Props) {
   const { t, i18n } = useTranslation();
   const isArabic: boolean = i18n.language === "ar";
   return (
@@ -42,8 +41,6 @@ export default function SellerCard({ imgSrc, text01, text02 }: Props) {
       >
         {text01}
       </motion.p>
-
-      <p className="text-gray-600 text-center px-6">{text02}</p>
 
       {/* Button */}
       <div

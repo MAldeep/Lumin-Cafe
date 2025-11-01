@@ -54,17 +54,17 @@ export default function TopSeller() {
         <SellerCard
           imgSrc={images.spanish_latte}
           text01={t("seller_01")}
-          text02="A brief description for each product."
+          // text02="A brief description for each product."
         />
         <SellerCard
           imgSrc={images.Lumin_Mojito}
           text01={t("seller_02")}
-          text02="A brief description for each product."
+          // text02="A brief description for each product."
         />
         <SellerCard
           imgSrc={images.galaxy_cake}
           text01={t("seller_03")}
-          text02="A brief description for each product."
+          // text02="A brief description for each product."
         />
       </motion.div>
     </motion.section>
