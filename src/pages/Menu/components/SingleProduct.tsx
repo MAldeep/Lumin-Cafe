@@ -45,7 +45,7 @@ export default function SingleProduct({titleEn , titleAr , img , price} : Props)
         whileInView={{opacity : 1 , x : 0}}
         viewport={{once : true , amount : 0.3}}
         transition={{duration : 1.2 , delay : 0.9 , ease : ["easeInOut"]}}
-        className="text-2xl text-amber-700">{price} $</motion.p>
+        className="text-2xl text-amber-700">{price} {isArabic ? "ر.س" : "SAR"}</motion.p>
       </motion.div>
     </motion.div>
   )
