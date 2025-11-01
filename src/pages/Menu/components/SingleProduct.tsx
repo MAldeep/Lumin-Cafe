@@ -38,7 +38,7 @@ export default function SingleProduct({titleEn , titleAr , img , price} : Props)
         whileInView={{opacity : 1 , x : 0}}
         viewport={{once : true , amount : 0.3}}
         transition={{duration : 1.2 , delay : 0.9 , ease : ["easeInOut"]}}
-        className={`text-end ${isArabic ? "aref-ruqaa-regular text-3xl" : "tangerine-regular text-5xl"}`}>{isArabic ? titleAr : titleEn}</motion.h1>
+        className={`text-end ${isArabic ? "aref-ruqaa-regular text-3xl" : "tangerine-regular text-2xl"}`}>{isArabic ? titleAr : titleEn}</motion.h1>
         <div className="w-full border-2 border-dotted border-gray-300"/>
         <motion.p
         initial={{opacity : 0 , x : 70}}
